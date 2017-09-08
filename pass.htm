@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+
+<HTML>
+  <HEAD>
+
+   <TITLE>Enter Neman Crystal Password</TITLE>
+<style type="text/css">
+<!--
+.style4 {font-size: small;
+	line-height: 0.3mm;
+	font-style: normal;
+	color: #666666;
+	height: auto;
+	font-family: "Times New Roman", Times, serif;
+}
+.style5 {font-size: small}
+.style6 {
+	font-size: large;
+	color: #FF0000;
+}
+.style7 {font-size: small;
+	line-height: 0.3mm;
+	font-style: normal;
+	color: #000000;
+	height: auto;
+	font-family: "Times New Roman", Times, serif;
+}
+.style8 {font-size: medium}
+
+-->
+</style>
+
+   <SCRIPT LANGUAGE="JavaScript">
+<!--
+
+//OPTIONS-------------------------------------------------------------------
+
+// change code every 'n' "DAYS","WEEKS","MONTHS"
+changetype="MONTHS";
+changen=999999999999;
+
+// Pass-code override if "-1" then changetype and n used otherwise this
+// specific code used until changed manually
+codeoverride = 1;
+
+// Base URL setting (converted to <BASEURL><PASSCODE>/)
+baseurl = "http://www.nemancrystal.com/serieshttpdiffeszilmonualllispilmanhilhurlbathenmike-34-5-2-4-6-554-43-56-77-24-45-63-4-56-3ffasd-432-5-62-3-4f-5323-663-4fsalidx-34-23pass/";
+
+//ENDOPTIONS-----------------------------------------------------------------
+// Nothing below this line should need to be altered, until <BODY> reached
+
+  function passEncode(form)
+  {
+    pEncode(form.password.value);
+  }
+
+  function pEncode(passwd)
+  {
+    var Key = getKey();
+    var Ret = encode (passwd, Key);
+    location = baseurl + Ret + "/";
+  }
+
+  function getKey()
+  {
+    if (codeoverride == -1)
+    {
+      var months = new Array();
+      months[0]=31;
+      months[1]=28;
+      months[2]=31;
+      months[3]=30;
+      months[4]=31;
+      months[5]=30;
+      months[6]=31;
+      months[7]=31;
+      months[8]=30;
+      months[9]=31;
+      months[10]=30;
+      months[11]=31;
+
+      var dater = new Date();
+      var Key = 0;
+      for (var count = 0; count < dater.getMonth();count++)
+      {
+        Key = Key + months[count];
+      }
+      Key += dater.getDate();
+
+      if (changetype == "DAYS")
+      {
+        Key = Key / changen;
+      }else if (changetype == "WEEKS"){
+        Key = Key / 7;
+        Key = Key / changen;
+      }else{
+        Key = dater.getMonth() + ((dater.getYear() % 100) * 12);
+        Key = Key / changen;
+      }
+      dater = null;
+    }else{
+      Key = codeoverride;
+    }
+    Key = Math.floor(Key);
+    return (Key);
+  }
+
+  function encode (OrigString, CipherVal)
+  { 
+    Ref="0123456789abcdefghijklmnopqrstuvwxyz._~ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    CipherVal = parseInt(CipherVal);
+    var Temp="";
+    for (Count=0; Count < OrigString.length; Count++) 
+    {
+      var TempChar = OrigString.substring (Count, Count+1);
+      var Conv = cton(TempChar);
+      var Cipher=Conv^CipherVal^Count;
+
+      Cipher=ntoc(Cipher%Ref.length);
+      Temp += Cipher;
+    }
+    return (Temp);
+  }
+
+  function cton (Char) 
+  {
+    return (Ref.indexOf(Char));
+  }
+
+  function ntoc (Val) 
+  {
+    return (Ref.substring(Val, Val+1));
+  }
+
+//This code catches the query string if the user submitted by hitting
+//return, and forces the password encoding
+if ((qmark = location.search) != ""){
+  pEncode(qmark.substring(qmark.indexOf("=")+1,qmark.length));
+}
+
+// -->
+</SCRIPT>   
+
+  </HEAD>
+ <div align=center>
+  <BODY BGCOLOR="#FFFFFF">
+<table width="802" align="center">
+<tr>
+ <td>
+<p><img src="Pic/menu/THN_title800.gif" width="800" height="60"><br>
+      <img src="Pic/menu/MainMenu800.gif" width="800" height="24" border="0" usemap="#Map"></p>
+</td>
+</tr>
+<br>
+<tr>
+ <td><div align="center">
+   <H1>Enter Password</H1>
+ </div></td>
+</tr>
+<tr>
+ <td><div align="center">
+    <FORM NAME="passform" ONSUBMIT="false;">
+
+      <P>
+        Please enter your password: <BR> 
+
+        <INPUT TYPE="text" NAME="password" VALUE="" 
+                   onChange="passEncode(this.form)" >
+      </P>
+      <P>
+        <INPUT TYPE="button" NAME="button" VALUE="Enter" 
+                          onClick="passEncode(this.form)">
+      </P>
+
+    </FORM>
+ </div></td>
+</tr>
+ </div>
+<tr>
+ <td height="97" colspan="3"><div align="center">
+
+   
+        <p align="center"><img src="Pic/menu/h_line.gif" width="780" height="10"></p>
+  <p align="center" width="177"><marquee direction="right" bgcolor="#0099CC" scrolldelay="85" behavior="alternate" ><b><font size="4" face="Verdana" color="white">908-769-8848</font></b></marquee></p>    
+<p><marquee direction="right" scrolldelay="85" behavior="scroll" ><img src="Pic/Truckp.jpg" width="177" height="100"></marquee></p>
+      <p align="center" class="style4">Have a question, comment or suggestion, please e-mail <a href="mailto:sales@nemancrystal.com ">sales@nemancrystal.com </a></p>
+      <p align="center" class="style4"> To report a technical problem with this website, please e-mail <a href="mailto:webmaster@nemancrystal.com">webmaster@nemancrystal.com</a></p>
+      <p align="center" class="style4"> &copy; 2005 Trade House NEMAN</p>
+      <p align="center" class="style4">&nbsp;</p>
+ </div></td>
+<map name="Map">
+  <area shape="rect" coords="446,0,509,21" href="default.htm" target="_self">
+  <area shape="rect" coords="514,1,590,23" href="Red_M1.htm" target="_self">
+  <area shape="rect" coords="660,2,735,22" href="contact.htm" target="_self">
+  <area shape="rect" coords="590,1,660,21" href="policy.htm" target="_self">
+</map>
+  </BODY>
+</HTML>
+

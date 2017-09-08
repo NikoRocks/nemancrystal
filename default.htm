@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Page-Enter" content="revealTrans(Duration=7,Transition=23)"> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="Description" CONTENT="Our handmade multicolor glass vases is an individual work of art from Poland, where craftsman create mouth blown glass art for your use and pleasure.. Products include vases, platters and candle holders.  Each piece is created through outstanding design and the craftsmanship of master blowers who have practiced their skills over many years, using the highest quality of raw materials. The vases and other pieces are also attractively priced and make great gift for any occasion.">
+<meta name="keywords" CONTENT="Trade House NEMAN,Neman,crystal,glassware,goblets,tumblers,baskets,boats,decanter,wine glasses,collection,discount prices,set,wine,champagne,wholesale,vase,vases,glass vases,multicolor vases,vase shopping,buy vases,sell vases,flower vases,art vases,Poland vases,Makora vase,Macora vase,Jozephina vase,Jozefina vase,mouth blown glass vase,free shape vase,rose bowl,big vases,small vases,flower vases,square vases,shop vases,decor,home,gift,interior,birthday,deco,online store,virtual,office,design,style,home interior decorating,unique gifts,best buys,Brooklyn,New York,NY,Belarus">
+<meta name="Classification" content="vases,crystal,chandelier,glass vases,home decor">
+<meta name="resource-type" CONTENT="document">
+<meta name="ROBOTS" CONTENT="all">
+<meta name="revisit-after" CONTENT="15 days">
+
+<title>Trade House NEMAN &copy;2005</title>
+<script type="text/javascript">
+      
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+ 
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["/Pic/FadeIn/09248.gif", "", ""] //plain image syntax [0]
+fadeimages[1]=["/Pic/FadeIn/1DSC_0005_1.jpg", "", ""] //image with link syntax[1]
+fadeimages[2]=["/Pic/FadeIn/4266.jpg", "", ""] //image with link and target syntax[2]
+fadeimages[3]=["/Pic/FadeIn/5507.JPG", "", ""] //plain image syntax [0]
+fadeimages[4]=["/Pic/FadeIn/599D305.jpg", "", ""] //plain image syntax [0]
+fadeimages[5]=["/Pic/FadeIn/637D56R.jpg", "", ""] //plain image syntax [0]
+fadeimages[6]=["/Pic/FadeIn/6917.jpg", "", ""] //plain image syntax [0]
+fadeimages[7]=["/Pic/FadeIn/7447.jpg", "", ""] //plain image syntax [0]
+fadeimages[8]=["/Pic/FadeIn/87R.JPG", "", ""] //plain image syntax [0]
+fadeimages[9]=["/Pic/FadeIn/890_65D102.jpg", "", ""] //plain image syntax [0]
+fadeimages[10]=["/Pic/FadeIn/dog.jpg", "", ""] //plain image syntax [0]
+fadeimages[11]=["/Pic/FadeIn/img033_1.gif", "", ""] //plain image syntax [0]
+fadeimages[12]=["/Pic/FadeIn/MX2802_6.gif", "", ""] //plain image syntax [0]
+fadeimages[13]=["/Pic/FadeIn/MX60990_3.JPG", "", ""] //plain image syntax [0]
+fadeimages[14]=["/Pic/FadeIn/MX70032_6.JPG", "", ""] //plain image syntax [0]
+fadeimages[15]=["/Pic/FadeIn/turtle_4.jpg", "", ""] //plain image syntax [0]
+fadeimages[16]=["/Pic/FadeIn/T986d11.JPG", "", ""] //plain image syntax [0]
+fadeimages[17]=["/Pic/FadeIn/Rococo.bmp", "", ""] //plain image syntax [0]
+
+ 
+ 
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+ 
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+ 
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+ 
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+ 
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+ 
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+ 
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+ 
+ 
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+ 
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+ 
+ 
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+
+
+<style type="text/css">
+<!--
+.style4 {font-size: small;
+	line-height: 0.3mm;
+	font-style: normal;
+	color: #666666;
+	height: auto;
+	font-family: "Times New Roman", Times, serif;
+}
+.style5 {font-size: small;
+	font-family: "Verdana", Times, serif;
+}
+.style6 {
+	font-size: large;
+	color: #FF0000;
+	font-family: "Verdana", Times, serif;
+}
+.style7 {font-size: small;
+	line-height: 0.3mm;
+	font-style: normal;
+	color: #000000;
+	height: auto;
+	font-family: "Times New Roman", Times, serif;
+}
+.style8 {font-size: medium}
+
+-->
+</style>
+</head>
+
+<body>
+<table width="802" align="center">
+  <tr>
+    <td height="84" colspan="3"><p><img src="Pic/menu/THN_title800.gif" width="800" height="60"><br>
+      <img src="Pic/menu/MainMenu800.gif" width="800" height="24" border="0" usemap="#Map"></p>
+    </td>
+  </tr>
+  <tr>
+ <!--   <td colspan="3"><p><marquee direction="left" scrolldelay="85" behavior="scroll" ><h3><font color="#af0000"><b>Announcements: </b></font><font color="#044e7b"> Upon arrival of the new items in June, the <b><a href="newcatalog.htm" target="_self">NEW ARRIVALS</a></b> catalogue has been established. You must first register to view the products.</font></h3></marquee></p></td> -->
+  </tr>
+  <tr>
+    <td width="445"><img src="Pic/menu/About_title.gif" width="250" height="20"></td>
+    <td width="23" rowspan="4"><img src="Pic/menu/v_line.gif" width="23" height="500"></td>
+    <td width="323"><img src="Pic/menu/News_title.gif" width="250" height="20"></td>
+  </tr>
+  <tr>
+    <td height="282" rowspan="2"><p class="style5"><img src="Pic/Show.JPG" width="437" height="328"> </p>
+    <div align="center"></div></td>
+    <td>      <p class="style5"><span class="style6"><b>T</b>rade House Neman</span> is very excited about the new out coming lines that we offer to our consumers! </p>
+      <p class="style5">We are always trying to update our collection with new designs and colors for individual vases. We just newly opened up a brand new line of <a href="newcatalog/Chand.htm" target="_self" class="style5">modern chandeliers</a>. Surely, this pleasing collection should be enticing for all types of persons. </p>
+      <p class="style5">We are encouraging you to visit all these collections at the Gift Shows that we participate in. Our new collection will provide a tranquil environment for your home and office. </p>
+    </td>
+  </tr>
+  <tr>
+  </tr>
+  <tr>
+    <td height="193"><p class="style5"><span class="style6">O</span>ur company specializes in the wholesale of glass, porcelain for the home, office, or the restaurant. We own a large <a href="Red_M1.htm" target="_self" class="style5">assortment</a> of goods and we regularly update our stock with new merchandise. We import our goods from famous Polish factories such as MAKORA, and CMIELOW. The production of hand-made glassware is indeed a long tedious hand process. The skilled hands and eyes of many men and women working in teams go into the making of every individual piece.</p>
+      <p class="style5">For your convenience all of our products are shown on our site. Don&rsquo;t hesitate to contact us, we will gladly answer to any of your questions. </p>
+    <p class="style5">If you would like to know the prices of any products, please <a href="contact.htm" target="_self" class="style5">contact</a> us via telephone or fax.</p>
+    </td>
+    <td>
+
+<div align="center">
+<script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+new fadeshow(fadeimages, 280, 250, 0, 2000, 0, "R")
+//new fadeshow(fadeimages2, 250, 250, 0, 3000, 0)
+</script>
+</div>
+	
+	
+	</td>
+  </tr>
+  
+<tr>
+    <td height="97" colspan="3"><div align="center">
+      <p align="center"><img src="Pic/menu/h_line.gif" width="780" height="10"></p>
+      <p align="center" class="style4">Have a question, comment or suggestion, please e-mail <a href="mailto:sales@nemancrystal.com ">sales@nemancrystal.com </a></p>
+      <p align="center" class="style4"> To report a technical problem with this website, please e-mail <a href="mailto:devnull@nemancrystal.com">webmaster@nemancrystal.com</a></p>
+      <p align="center" class="style4"> &copy; 2005 Trade House NEMAN</p>
+      <p align="center" class="style4">&nbsp;</p>
+    </div></td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="590,4,658,23" href="http://www.nemancrystal.com/Red_M1.htm" target="_self">
+  <area shape="rect" coords="717,4,791,24" href="http://www.nemancrystal.com/contact.htm" target="_self">
+  <area shape="rect" coords="660,4,716,22" href="http://www.nemancrystal.com/policy.htm" target="_self">
+  <area shape="rect" coords="486,5,587,22" href="http://www.nemancrystal.com/newcatalog.htm" target="_self"></map>
+</body>
+</html>
